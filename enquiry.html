@@ -8,26 +8,31 @@
 
 <body>
 
+<header>
 <h1>Tourist Enquiry Form</h1>
+</header>
 
-<form onsubmit="return validateForm()">
+<form onsubmit="saveToExcel(event)">
 
-Name<br>
-<input type="text" id="name"><br><br>
+<label>Name</label><br>
+<input type="text" id="name" required><br><br>
 
-Email<br>
-<input type="email" id="email"><br><br>
+<label>Email</label><br>
+<input type="email" id="email" required><br><br>
 
-Country<br>
+<label>Phone</label><br>
+<input type="text" id="phone"><br><br>
+
+<label>Country</label><br>
 <input type="text" id="country"><br><br>
 
-Travel Date<br>
+<label>Travel Date</label><br>
 <input type="date" id="date"><br><br>
 
-Message<br>
+<label>Message</label><br>
 <textarea id="message"></textarea><br><br>
 
-<input type="submit" value="Submit">
+<button type="submit">Submit</button>
 
 </form>
 
